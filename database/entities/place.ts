@@ -1,16 +1,16 @@
 import { Entity, Column, PrimaryGeneratedColumn } from "typeorm"
 
-@Entity
+@Entity()
 export class Place {
     @PrimaryGeneratedColumn()
-    id: Number = 0
+    id!: Number
 
     @Column()
-    nom: String = ""
+    nom!: String
     
     @Column()
-    adresse: String = ""
+    adresse!: String
     
     @Column()
-    commentaire: String = ""
+    commentaire!: String
 }

@@ -1,13 +1,13 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { Place } from "./place"
+import { Place } from "./entities/place"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
     host: "localhost",
     port: 5432,
     username: "jboudt",
-    password: "Freyja$80",
+    password: "docker",
     database: "TierList",
     entities: [Place],
 })

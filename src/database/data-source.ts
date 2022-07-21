@@ -10,4 +10,7 @@ export const AppDataSource = new DataSource({
     password: "docker",
     database: "TierList",
     entities: [Place],
+    schema: "public",
+    synchronize: true,
+    dropSchema:true
 })
